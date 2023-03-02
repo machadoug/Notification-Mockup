@@ -1,15 +1,9 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <v-container class="about">
+    <h1>Notification Mockup</h1>
+    <p>Created by Douglas Machado</p>
+  </v-container>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+<script lang="ts" setup>
+</script>
