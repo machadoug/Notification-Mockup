@@ -1,0 +1,26 @@
+[
+	{
+		"name": "John Smith",
+		"email": "john@company.com",
+		"phone": "+1 9706824747",
+		"channels": "sms,email,push"
+	},
+	{
+		"name": "Jane Doe",
+		"email": "jane@doe.com",
+		"phone": "+1 5055555555",
+		"channels": "push"
+	},
+	{
+		"name": "Roger That",
+		"email": "roger@that.com",
+		"phone": "+1 5085555555",
+		"channels": "sms"
+	},
+	{
+		"name": "George Walton Lucas",
+		"email": "gwl@films.com",
+		"phone": "+1 9706828787",
+		"channels": "email"
+	}
+]
