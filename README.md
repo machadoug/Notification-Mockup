@@ -18,6 +18,7 @@ cd client
 yarn
 yarn dev
 ```
+The URL to access the client-side will be displayed on the terminal
 
 ### Server - Terminal B
 ```
