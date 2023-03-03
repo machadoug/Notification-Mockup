@@ -9,7 +9,8 @@ For simplicity reasons we're using SQLite
 * npm is required and it's installed automatically with node.js
 
 # Setup instructions
-Open two terminal windows
+* Clone this [Git repository](https://github.com/machadoug/Notification-Mockup)
+* Open two terminal windows
 
 ### Client - Terminal A
 ```
