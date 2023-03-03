@@ -15,6 +15,8 @@ import { useGlobal } from '@/store';
 
 // Components
 import HomeView from '@/views/HomeView.vue';
+import SendView from '@/views/SendView.vue';
+import HistoryView from '@/views/HistoryView.vue';
 
 /** Router Rules */
 const routes: RouteRecordRaw[] = [
@@ -26,12 +28,12 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/new',
     name: 'New',
-    component: HomeView,
+    component: SendView,
   },
   {
     path: '/history',
     name: 'History',
-    component: HomeView,
+    component: HistoryView,
   },
   {
     path: '/about',

@@ -34,11 +34,10 @@ module.exports = {
 		});
 	
 		// console.log(providers)
-		res.status(400).send({
+		res.status(200).send({
 			message: ` ${count} notifications sent to ${countUsers} users`,
-			users: users,
-			data: req.body
 		})
+		
     } catch (err) {
 		console.log(err)
 		res.status(400).send({
@@ -51,10 +50,10 @@ module.exports = {
 
 	try {
 		const history = await History.findAll({
-			offset: req.body.offset || 0, 
-			limit: req.body.limit || 50,
+			offset: req.query.offset || 0, 
+			limit: req.query.limit || 50,
 			order: [
-				['createdAt', 'DESC'],
+				[req.query.orderBy || 'createdAt', req.query.orderDir || 'DESC'],
 			],
 			include: [{
 				model: Category,
@@ -65,9 +64,12 @@ module.exports = {
 				attributes: ['name']
 			}]
 		});
+
+		const total = await History.count();
 	
-		res.status(400).send({
-			history: history
+		res.status(200).send({
+			list: history,
+			total: total
 		})
     } catch (err) {
 		console.log(err)

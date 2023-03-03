@@ -3,6 +3,8 @@
  */
 import { aliases, mdi } from 'vuetify/iconsets/mdi';
 import { createVuetify } from 'vuetify';
+import * as labs from 'vuetify/labs/components'
+
 
 // For test use. Do not include createVuetify()
 // see https://next.vuetifyjs.com/en/features/treeshaking/

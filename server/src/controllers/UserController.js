@@ -31,7 +31,7 @@ module.exports = {
 	
 			const userJson = user.toJSON()
 			res.send({
-				user: userJson,
+				data: userJson,
 			})
 		} catch (e) {
 			res.status(400).send({
